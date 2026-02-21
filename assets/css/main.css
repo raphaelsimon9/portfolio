@@ -2620,7 +2620,7 @@ input, select, textarea {
 			height: auto;
 		}
 
-		.image.fit .pic {
+		.pic {
 			width: 100%;
 			height: auto;
 			object-fit: contain;
