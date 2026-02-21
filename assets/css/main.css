@@ -2597,15 +2597,17 @@ input, select, textarea {
 
 		.image.fit {
 			display: block;
-			margin: 0 0 2em 0;
-			width: 100%;
-			overflow: hidden;
+			width: 100%;       /* Fills the width of its own parent (e.g., a column or sidebar) */
+			max-width: 600px;  /* Example: Limits the maximum width of the block */
+			height: 300px;     /* Example: Limits the maximum height of the block */
+			overflow: hidden;  /* Prevents any part of the image from "spilling" out */
 		}
 
-			.image.fit img {
-				width: 100%;
-				height: auto;      /* Keeps the image's proportions correct (no squishing) */
-    			display: block;
+		.image.fit img {
+			width: 100%;
+			height: 100%;       /* Forces the image to match container height */
+			object-fit: cover;  /* Crops the image to fill the space without stretching */
+			display: block;
 			}
 
 		.image.main {
