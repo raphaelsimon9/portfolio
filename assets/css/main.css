@@ -2604,6 +2604,8 @@ input, select, textarea {
 
 			.image.fit img {
 				width: 100%;
+				height: auto;      /* Keeps the image's proportions correct (no squishing) */
+    			display: block;
 			}
 
 		.image.main {
