@@ -2603,7 +2603,7 @@ input, select, textarea {
 		.image.fit img {
 			width: 100%;
 			height: auto;
-			object-fit: contain;
+			object-fit: cover;
 			}
 
 		.image.main {
