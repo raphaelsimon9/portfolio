@@ -3923,8 +3923,8 @@ input, select, textarea {
 			position: fixed;
 			bottom: 30px;
 			right: 30px;
-			background: #333;
-			color: white;
+			background: #15c312;
+			color: rgb(203, 234, 5);
 			padding: 10px 15px;
 			border-radius: 5px;
 			text-decoration: none;
@@ -3932,5 +3932,5 @@ input, select, textarea {
   		}
 
 		#backToTop:hover {
-			background: #555;
+			background: #dd0404;
 		}
