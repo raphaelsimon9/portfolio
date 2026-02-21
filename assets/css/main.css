@@ -2597,6 +2597,7 @@ input, select, textarea {
 			display: block;
 			margin: 0 0 2em 0;
 			width: 100%;
+			height: auto;
 		}
 
 		.image.fit img {
@@ -2609,12 +2610,14 @@ input, select, textarea {
 			display: block;
 			margin: 0 0 3em 0;
 			width: 100%;
+			height: auto;
 		}
 
 		.image.main img {
 			width: 100%;
 			height: 100%;
 			object-position: center;
+			height: auto;
 			}
 
 /* List */
