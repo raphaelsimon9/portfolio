@@ -2623,7 +2623,6 @@ input, select, textarea {
 		.pic {
 			width: 100%;
 			height: auto;
-			object-fit: contain;
 		}
 
 /* List */
