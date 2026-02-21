@@ -3019,6 +3019,12 @@ input, select, textarea {
 			width: 25em;
 		}
 
+			.spotlights > section > .image .pic {
+				width: 100%;
+				height: auto;
+				object-fit: contain;  /* shows ALL sides, no cropping */
+			}
+
 			.spotlights > section > .image img {
 				border-radius: 0;
 				display: block;
