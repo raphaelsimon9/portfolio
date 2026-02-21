@@ -2566,13 +2566,11 @@ input, select, textarea {
 		border: 0;
 		display: inline-block;
 		position: relative;
-		object-fit: cover; /* Add this to crop nicely instead of stretching */
 	}
 
 		.image img {
 			border-radius: 0.25em;
 			display: block;
-			object-fit: cover; /* Add this to crop nicely instead of stretching */
 		}
 
 		.image.left, .image.right {
@@ -2597,17 +2595,13 @@ input, select, textarea {
 
 		.image.fit {
 			display: block;
-			width: 100%;       /* Fills the width of its own parent (e.g., a column or sidebar) */
-			max-width: 600px;  /* Example: Limits the maximum width of the block */
-			height: 300px;     /* Example: Limits the maximum height of the block */
-			overflow: hidden;  /* Prevents any part of the image from "spilling" out */
+			margin: 0 0 2em 0;
+			width: 100%;
 		}
 
 		.image.fit img {
 			width: 100%;
-			height: 100%;       /* Forces the image to match container height */
-			object-fit: cover;  /* Crops the image to fill the space without stretching */
-			display: block;
+			height: auto;
 			}
 
 		.image.main {
@@ -2616,8 +2610,11 @@ input, select, textarea {
 			width: 100%;
 		}
 
-			.image.main img {
-				width: 100%;
+		.image.main img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover; /* crops to fill without distortion */
+			object-position: center;
 			}
 
 /* List */
