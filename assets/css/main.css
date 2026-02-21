@@ -2618,7 +2618,13 @@ input, select, textarea {
 			height: 100%;
 			object-position: center;
 			height: auto;
-			}
+		}
+
+		.image.fit .pic {
+			width: 100%;
+			height: auto;
+			object-fit: contain;
+		}
 
 /* List */
 
